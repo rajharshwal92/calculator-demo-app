@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="outerConatiner">
+  <div class="showData">
+    {{showData}}
+  </div>
+ <div class="calculatorContainer">
+  <div calss="calculatorNumers">
+    <div class="numberRow">
+      <button (click)="returnValue(7)">
+        7
+      </button>
+      <button (click)="returnValue(8)">
+        8
+      </button>
+      <button (click)="returnValue(9)">
+        9
+      </button>
+    </div>
+    <div class="numberRow">
+      <button (click)="returnValue(4)">
+        4
+      </button>
+      <button (click)="returnValue(5)">
+        5
+      </button>
+      <button (click)="returnValue(6)">
+        6
+      </button>
+    </div>
+    <div class="numberRow">
+      <button (click)="returnValue(1)">
+        1
+      </button>
+      <button (click)="returnValue(2)">
+        2
+      </button>
+      <button (click)="returnValue(3)">
+        3
+      </button>
+    </div>
+    <div class="numberRow">
+        <button (click)="returnValue(0)">
+          0
+        </button>
+      </div>
+  </div>
+  <div class="calculatorOperator">
+    <button (click)="returnOperator('+')">
+      +
+    </button>
+    <button (click)="returnOperator('-')">
+      -
+    </button>
+    <button (click)="returnOperator('*')">
+      *
+    </button>
+    <button (click)="finalResult()">
+        =
+      </button>
+  </div>
+ </div>
+ </div>
+</ion-content>
